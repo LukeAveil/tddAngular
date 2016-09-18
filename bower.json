@@ -1,7 +1,7 @@
 {
   "name": "tddangular",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "authors": [
     "Luke <lukeaveil@yahoo.com>"
   ],
