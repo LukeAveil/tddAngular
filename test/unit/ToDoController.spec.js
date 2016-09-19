@@ -7,7 +7,13 @@ describe('ToDoController', function() {
     ctrl = $controller('ToDoController');
   }));
 
-  it('initialises with a toDo', function() {
-    expect(ctrl.todo).toEqual("ToDo1");
+  it('initialises with several todos', function() {
+    var todos = [
+      {text: "ToDo1", completed: true},
+      {text: "ToDo2", completed: false}
+    ];
+
+    expect(ctrl.todos).toEqual(todos);
+
   });
 });
