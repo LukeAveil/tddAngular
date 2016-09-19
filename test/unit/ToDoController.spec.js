@@ -14,6 +14,12 @@ describe('ToDoController', function() {
     ];
 
     expect(ctrl.todos).toEqual(todos);
+  });
 
+  it('adds a new todo', function() {
+    ctrl.addToDo('NewTodo');
+
+    var todo = {text: "NewTodo", completed: false};
+    expect(ctrl.todos.pop()).toEqual(todo);
   });
 });
