@@ -1,7 +1,7 @@
 tddangular.factory('ToDoFactory', function() {
   var ToDo = function(text, completed){
     this.text = text;
-    this.completed = false;
+    this.completed = (typeof completed !== 'undefined') ? completed : false;
   };
 
   ToDo.prototype.complete = function() {
